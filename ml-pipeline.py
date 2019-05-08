@@ -10,7 +10,8 @@ from luigi import six
 from sklearn.decomposition import NMF
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.cross_validation import train_test_split
+# from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 
 # Load data from files
 class InputText(luigi.ExternalTask):
